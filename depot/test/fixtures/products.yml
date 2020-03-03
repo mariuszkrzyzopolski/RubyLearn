@@ -13,7 +13,7 @@ two:
   price: 9.99
 ruby:
   title: Programing Ruby 1.9
-  desciption:
+  description:
     Ruby is the fastest and best
   price: 49.50
-  image_ruby: ruby.png
+  image_url: ruby.png
