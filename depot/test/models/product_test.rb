@@ -46,7 +46,7 @@ class ProductTest < ActiveSupport::TestCase
   end
   test "product is not valid without a unique title" do
     product = Product.new(title: products(:ruby).title,
-                          desciption:"yyyy",
+                          description:"yyyy",
                           price:1,
                           image_url: "fred.gif")
     assert product.valid?
