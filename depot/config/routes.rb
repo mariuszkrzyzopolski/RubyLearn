@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :line_items
+  resources :carts
   get 'store/index'
 
   resources :products
-  resources :products
   root 'store#index', as: 'store'
+  post 'line_items/:product_id' => 'line_items#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
