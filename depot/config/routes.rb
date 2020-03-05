@@ -19,7 +19,7 @@ Rails.application.routes.draw do
     resources :line_items
     resources :carts
     root 'store#index', as: 'store', via: :all
-  end 
+  end
 
   post 'line_items/:product_id' => 'line_items#create'
   # The priority is based upon order of creation: first created -> highest priority.
